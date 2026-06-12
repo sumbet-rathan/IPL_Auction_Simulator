@@ -1,0 +1,136 @@
+# IPL Auction Simulator
+
+A Python-based simulation of the Indian Premier League (IPL) player auction system. Built to practice Python fundamentals, OOP, and real-world system design.
+
+---
+
+## About the Project
+
+This project simulates how IPL teams bid for and buy players in an auction. It automatically generates players, runs a bidding process across 8 IPL franchises, and saves the results to CSV files — just like a mini version of the real IPL mega auction.
+
+---
+
+## Features
+
+- ‍‍ Generates **150 cricket players** (100 Indian + 50 Overseas) automatically
+- ️ Simulates an auction across **8 IPL teams**
+- Each team starts with a fixed **purse of ₹2000**
+- Teams randomly bid for players
+- Tracks **sold** and **unsold** players
+- Saves all results to **CSV files** (open in Excel)
+
+---
+
+## Teams
+
+| Team | Starting Purse |
+|------|---------------|
+| SRH — Sunrisers Hyderabad | ₹2000 |
+| CSK — Chennai Super Kings | ₹2000 |
+| MI — Mumbai Indians | ₹2000 |
+| RCB — Royal Challengers Bengaluru | ₹2000 |
+| KKR — Kolkata Knight Riders | ₹2000 |
+| RR — Rajasthan Royals | ₹2000 |
+| DC — Delhi Capitals | ₹2000 |
+| GT — Gujarat Titans | ₹2000 |
+
+---
+
+## Player Attributes
+
+Each player is generated with:
+
+- **Name** — Randomly generated
+- **Country** — India or Overseas
+- **Role** — Batsman / Bowler / Allrounder / Wicketkeeper
+- **Base Price** — Starting bid amount
+- **Rating** — Skill rating
+
+---
+
+## Project Structure
+
+```
+IPL-Auction-Simulator/
+│
+├── Generate_Players.py # Generates player data and saves to CSV
+├── player.py # Player class definition
+├── team.py # Team class definition
+├── utils.py # Utility functions (load players from CSV)
+├── auction.py # Core auction logic
+├── main.py # Entry point — runs the full auction
+│
+└── data/
+├── players.csv # All generated players
+├── team_squads.csv # Players bought by each team
+├── sold_players.csv # All sold players
+└── unsold_players.csv # Players who went unsold
+```
+
+---
+
+## How to Run
+
+### Prerequisites
+- Python 3.x installed
+
+### Step 1 — Clone the repository
+```bash
+git clone https://github.com/your-username/ipl-auction-simulator.git
+cd ipl-auction-simulator
+```
+
+### Step 2 — Generate players
+```bash
+python Generate_Players.py
+```
+
+### Step 3 — Run the auction
+```bash
+python main.py
+```
+
+### Step 4 — View results
+Check the `data/` folder for output CSV files. You can open them in Excel or Google Sheets.
+
+---
+
+## Output Files
+
+| File | Description |
+|------|-------------|
+| `players.csv` | All 150 generated players with their attributes |
+| `team_squads.csv` | Final squads — which team bought which player |
+| `sold_players.csv` | List of all players who were sold in the auction |
+| `unsold_players.csv` | List of players who received no bids |
+
+---
+
+## ️ Concepts Practiced
+
+This project was built to strengthen the following Python skills:
+
+- Python basics — loops, conditions, lists, dictionaries
+- Functions and modular code
+- Object-Oriented Programming (OOP) — classes and objects
+- File handling — reading and writing CSV files
+- Multi-file project structure
+
+---
+
+## ‍️ Why I Built This
+
+Instead of solving isolated coding problems, I wanted to build something practical and relatable. The IPL auction is a system I understand as a cricket fan, so simulating it helped me learn how to think about real-world problems and organize code across multiple files.
+
+---
+
+## Connect with Me
+
+Feel free to reach out if you have suggestions or feedback!
+
+- GitHub: [@your-username](https://github.com/your-username)
+- LinkedIn: [your-linkedin](https://linkedin.com/in/your-linkedin)
+
+---
+
+*Built with ️ and Python*
